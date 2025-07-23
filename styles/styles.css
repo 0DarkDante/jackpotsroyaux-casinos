@@ -218,6 +218,96 @@ font-weight: 600;
   /* м'яке світіння */
 }
 
+/* Для екранів до 1024px (планшети) */
+@media (max-width: 1024px) {
+  .card {
+    padding: 0 40px;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .card__row--4paras,
+  .card__row--2paras,
+  .card__row--5imgs,
+  .card__row--buttons {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .card__image {
+    margin: 0 auto;
+  }
+}
+
+/* Для мобілок до 768px */
+@media (max-width: 768px) {
+  .card {
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+.cards .container {
+    margin-left: 3px;
+  }
+
+  .card__row--4paras,
+  .card__row--2paras,
+  .card__row--5imgs,
+  .card__row--buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .card__image {
+    width: 142px;
+    height: auto;
+  }
+
+  .card__btn,
+  .btn {
+    border-radius: 10px;
+      padding: 10px 24px;
+      width: 171px;
+      height: 40px;
+  }
+
+  .card__text {
+    font-weight: 400;
+      font-size: 12px;
+  }
+
+  .card-bienvenue {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .card-bonus {
+    font-weight: 600;
+  }
+
+  .card__column1 {
+    font-weight: 600;
+      font-size: 16px;
+  }
+
+  .card__column2 {
+    font-weight: 600;
+      font-size: 12px;
+  }
+
+  .card__text--inline {
+    font-weight: 400;
+      font-size: 12px;
+  }
+}
+
 /* Highlight section */
 .highlight {
   text-align: center;
