@@ -8,6 +8,7 @@
   --font-family: "Fira Sans", sans-serif;
   --second-family: "Ibarra Real Nova", serif;
   --third-family: "Inter", sans-serif;
+  --bc: linear-gradient(90deg, #675738 0%, #cea553 29.55%, #9f7f3e 50.64%, #715929 58.34%, #574520 100%);
 }
 
 body {
@@ -105,6 +106,7 @@ a {
 
 .btn {
 border-radius: 10px;
+    border-color: #cea553;
   padding: 10px 24px;
   width: 134px;
   height: 40px;
@@ -118,18 +120,102 @@ border-radius: 10px;
 
 /* Cards */
 .cards .container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  padding: 60px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 48px 0;
 }
 
 .card {
-  background: #2B2B2B;
-  padding: 40px;
+  width: 100%;
+  padding: 0px 90px;
+  height: 200px;
+  display: flex;
+  gap: 48px;
+  border: 3px solid rgb(163 104 13 / 68%);
+  border-radius: 20px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card__text {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+}
+
+.card__btn {
   border-radius: 10px;
+    padding: 10px 24px;
+    width: 171px;
+    height: 40px;
+    box-shadow: 0 4px 9px 0 rgba(159, 127, 62, 0.16);
+    font-weight: 700;
+      font-size: 16px;
+      color: #fff;
+      font-family: "Ibarra Real Nova", sans-serif;
+  background: #000000;
+  border-color: #cea553;
+}
+
+.card-bienvenue {
+  font-weight: 700;
+    font-size: 24px;
+    background: linear-gradient(90deg, #675738 0%, #cea553 29.55%, #9f7f3e 50.64%, #715929 58.34%, #574520 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+}
+
+.card__icon {
+  height: 18px;
+}
+
+.card__column1 {
+  font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+} 
+
+.card__column2 {
+font-weight: 600;
+  font-size: 14px;
   text-align: center;
-  border: 1px solid #444;
+  color: #fff;
+}
+
+.card__row--buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+.card__text--inline {
+  font-weight: 400;
+    font-size: 12px;
+    color: #fff;
+    font-family: "Fira Sans", sans-serif;
+}
+
+.card-bonus {
+  font-weight: 600;
+}
+
+.card__image {
+  width: 142px;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.05);
+  /* легкий білий фон */
+  padding: 8px;
+  /* трохи внутрішнього простору */
+  border-radius: 8px;
+  /* делікатне заокруглення */
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.1);
+  /* м'яке світіння */
 }
 
 /* Highlight section */
