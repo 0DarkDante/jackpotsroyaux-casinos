@@ -65,7 +65,7 @@ a {
 
 .nav {
   display: flex;
-  gap: 10px;
+  gap: 40px;
 }
 
 .nav a {
@@ -266,4 +266,45 @@ border-radius: 10px;
   .btn {
     padding: 10px 20px;
   }
+}
+
+.jr-privacy {
+  padding: 0 0 48px;
+  font-family: var(--font-family);
+  color: #f5f5f5;
+}
+
+.jr-privacy__title {
+  width: 100%;
+  background: url('/images/Hero.png') center center/cover no-repeat;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0 0 40px;
+  padding: 114px 0;
+  font-family: "Ibarra Real Nova", sans-serif;
+  font-weight: 700;
+    font-size: 32px;
+
+}
+
+.jr-privacy__section {
+  margin-bottom: 40px;
+}
+
+.jr-privacy__subtitle {
+  font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.jr-privacy__text {
+  font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+  font-family: "Fira Sans", sans-serif;
 }
