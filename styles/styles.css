@@ -172,34 +172,56 @@ border-radius: 10px;
 /* Footer */
 .site-footer {
   background: #0568a2;
-  padding: 40px 20px;
+  padding: 24px 20px;
   text-align: center;
 }
 
 .footer-logos {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  gap: 15px;
-  margin-bottom: 30px;
+  gap: 10px;
+  /* margin-bottom: 30px; */
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-logos img {
-  width: 60px;
-  height: auto;
+    width: 170px;
+    height: 60px;
+  object-fit: contain;
+  /* щоб зберегти пропорції, не обрізати */
+  display: block;
 }
 
 .footer-links {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 15px;
-  margin-bottom: 20px;
+  gap: 42px;
+  margin: 32px 0;
+}
+
+.footer-links a {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+    font-size: 16px;
+    color: #dadada;
+}
+
+.footer-info {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #dadada;
 }
 
 .footer-text {
-  font-size: 14px;
-  margin-bottom: 10px;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+    font-size: 14px;
+    color: #dadada;
+  margin-top: 32px;
 }
 
 .footer-subtext {
