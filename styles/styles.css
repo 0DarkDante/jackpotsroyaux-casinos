@@ -11,6 +11,10 @@
   --bc: linear-gradient(90deg, #675738 0%, #cea553 29.55%, #9f7f3e 50.64%, #715929 58.34%, #574520 100%);
 }
 
+button {
+  cursor: pointer;
+}
+
 body {
   font-family: sans-serif;
   line-height: 1.6;
@@ -148,6 +152,7 @@ border-radius: 10px;
 .card__btn {
   border-radius: 10px;
     padding: 10px 24px;
+    line-height: 15px;
     width: 171px;
     height: 40px;
     box-shadow: 0 4px 9px 0 rgba(159, 127, 62, 0.16);
@@ -156,7 +161,8 @@ border-radius: 10px;
       color: #fff;
       font-family: "Ibarra Real Nova", sans-serif;
   background: #000000;
-  border-color: #cea553;
+  border: 3px solid #cea553;
+  text-align: center;
 }
 
 .card-bienvenue {
@@ -483,4 +489,329 @@ font-weight: 600;
     font-size: 16px;
     color: #fff;
   font-family: "Fira Sans", sans-serif;
+}
+
+.cookie-notice {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(27, 27, 27, 0.95);
+  color: #f0e6a8;
+  max-width: 400px;
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 14px;
+  z-index: 10000;
+  display: none;
+  /* сховано за замовчуванням */
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cookie-notice.active {
+  display: flex;
+}
+
+.cookie-header {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #f7c11fba;
+}
+
+.cookie-info {
+  margin: 0;
+  line-height: 1.4;
+  color: #ddd;
+}
+
+.cookie-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
+.cookie-btn {
+  cursor: pointer;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.cookie-btn.accept {
+  background: linear-gradient(90deg, #675738 0%, #cea553 29%, #9f7f3e 50%, #715929 58%, #574520 100%);
+  color: #000;
+}
+
+.cookie-btn.accept:hover {
+  background: #a1853d;
+}
+
+.cookie-btn.refuse {
+  background: #444;
+  color: #fff;
+}
+
+.cookie-btn.refuse:hover {
+  background: #666;
+}
+
+.cookie-notice {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%) translateY(100%);
+  background: #1c1800;
+  color: #f5f5f5;
+  border: 2px solid #cea553;
+  padding: 20px 30px;
+  border-radius: 14px;
+  max-width: 480px;
+  width: 90%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+  z-index: 9998;
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+.cookie-notice.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+.cookie-btn {
+  padding: 10px 18px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: "Ibarra Real Nova", sans-serif;
+  margin: 10px;
+}
+
+.cookie-btn.accept {
+  background: linear-gradient(90deg, #675738, #cea553);
+  color: #000;
+}
+
+.cookie-btn.refuse {
+  background: #444;
+  color: #fff;
+}
+
+
+.age-verification {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  display: none;
+  /* приховано за замовчуванням */
+}
+
+.age-verification__popup {
+  background: #1c1800;
+  border: 2px solid #cea553;
+  border-radius: 16px;
+  padding: 30px;
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
+  color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.age-verification__popup.active {
+  display: flex;
+}
+
+.age-verification__image {
+  max-width: 80px;
+  margin: 0 auto;
+}
+
+.age-verification__message {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #f5f5f5;
+}
+
+.age-verification__controls {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.age-verification__btn {
+  padding: 10px 20px;
+  font-weight: 600;
+  font-size: 14px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "Ibarra Real Nova", sans-serif;
+  transition: all 0.3s ease;
+}
+
+.confirm-btn {
+  background: linear-gradient(90deg, #675738 0%, #cea553 50%, #574520 100%);
+  color: #000;
+}
+
+.confirm-btn:hover {
+  background: #a1853d;
+}
+
+.decline-btn {
+  background: #444;
+  color: #fff;
+}
+
+.decline-btn:hover {
+  background: #666;
+}
+
+
+
+
+
+/* === Overlay === */
+.overlay-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 999;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease;
+}
+
+.overlay-modal.active {
+  display: flex;
+  animation: fadeIn 0.4s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* === Contact Form === */
+.contact-form {
+  background-color: #1c1c1e;
+  padding: 40px;
+  max-width: 500px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  color: #f5f5f5;
+  position: relative;
+  animation: slideIn 0.4s ease forwards;
+  opacity: 0;
+}
+
+.overlay-modal.active .contact-form {
+  opacity: 1;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* === Close Button === */
+.contact-close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-size: 28px;
+  background: none;
+  color: #aaa;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.contact-close:hover {
+  color: #fff;
+}
+
+/* === Form Fields === */
+.contact-title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #be8915c7;
+}
+
+.contact-label {
+  display: block;
+  margin-top: 16px;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #ddd;
+}
+
+.contact-input,
+.contact-textarea {
+  width: 100%;
+  padding: 12px;
+  background-color: #2a2a2c;
+  border: 1px solid #444;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.contact-input:focus,
+.contact-textarea:focus {
+  border-color: #ffcc00;
+}
+
+/* === Submit Button === */
+.contact-submit {
+  padding: 12px 20px;
+  background-color: #be8915c7;
+  color: #1c1c1e;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: 0 auto;
+    margin-top: 24px;
+}
+
+.contact-submit:hover {
+  background-color: #e6b800;
 }

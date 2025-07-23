@@ -74,7 +74,7 @@
 
           <div class="card__row card__row--buttons">
             <button class="btn">BONUS</button>
-            <button class="card__btn">Visite</button>
+            <a href="https://www.unibet.fr/sport" class="card__btn">Visite</a>
             <p class="card__text card__text--inline">En savoir plus</p>
           </div>
         </div>
@@ -107,7 +107,7 @@
           </div>
           <div class="card__row card__row--buttons">
             <button class="btn">BONUS</button>
-            <button class="card__btn">Visite</button>
+            <a href="https://www.netbet.fr/" class="card__btn">Visite</a>
             <p class="card__text card__text--inline">En savoir plus</p>
           </div>
         </div>
@@ -144,7 +144,7 @@
           </div>
           <div class="card__row card__row--buttons">
             <button class="btn">BONUS</button>
-            <button class="card__btn">Visite</button>
+            <a href="https://www.winamax.fr/" class="card__btn">Visite</a>
             <p class="card__text card__text--inline">En savoir plus</p>
           </div>
         </div>
@@ -176,7 +176,7 @@
           </div>
           <div class="card__row card__row--buttons">
             <button class="btn">BONUS</button>
-            <button class="card__btn">Visite</button>
+            <a href="https://www.pmu.fr/" class="card__btn">Visite</a>
             <p class="card__text card__text--inline">En savoir plus</p>
           </div>
         </div>
@@ -246,7 +246,7 @@
           /></a>
         </div>
         <div class="footer-links">
-          <a href="#">Nous contacter</a>
+          <a href="#" class="contact-link">Nous contacter</a>
           <a href="footer1.html">Confidentialité</a>
           <a href="footer2.html">Conditions</a>
           <a href="footer3.html">Cookies</a>
@@ -269,5 +269,78 @@
         </p>
       </div>
     </footer>
+
+    <div class="cookie-notice">
+      <div class="cookie-content">
+        <h3 class="cookie-header">Gestion des Cookies</h3>
+        <p class="cookie-info">
+          Pour une expérience optimale, nous utilisons des cookies. Configurez
+          vos préférences à tout moment.
+        </p>
+        <div class="cookie-actions">
+          <button class="cookie-btn refuse">Refuser</button>
+          <button class="cookie-btn accept">Accepter</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="age-verification">
+      <div class="age-verification__popup active">
+        <img
+          src="images/footer/6.webp"
+          alt="Contrôle d'âge"
+          class="age-verification__image"
+        />
+        <p class="age-verification__message">
+          Vous devez avoir au moins 18 ans pour continuer.
+        </p>
+        <div class="age-verification__controls">
+          <button class="age-verification__btn confirm-btn">
+            J'ai 18 ans ou plus
+          </button>
+          <button class="age-verification__btn decline-btn">Quitter</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="overlay-modal" id="contact-popup" aria-hidden="true">
+      <form class="contact-form" novalidate>
+        <button type="button" class="contact-close" aria-label="Fermer">
+          &times;
+        </button>
+        <h2 class="contact-title">Contactez-nous</h2>
+
+        <label for="user-name" class="contact-label">Nom</label>
+        <input
+          type="text"
+          id="user-name"
+          name="username"
+          required
+          class="contact-input"
+        />
+
+        <label for="user-email" class="contact-label">Email</label>
+        <input
+          type="email"
+          id="user-email"
+          name="useremail"
+          required
+          class="contact-input"
+        />
+
+        <label for="user-message" class="contact-label">Message</label>
+        <textarea
+          id="user-message"
+          name="usermessage"
+          rows="4"
+          required
+          class="contact-textarea"
+        ></textarea>
+
+        <button type="submit" class="contact-submit">Envoyer</button>
+      </form>
+    </div>
+
+    <script src="script/script.js"></script>
   </body>
 </html>
