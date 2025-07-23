@@ -1,0 +1,201 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  color: #fff;
+  background-color: #121212;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+.site-header {
+  background: #1c1800;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.site-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+.site-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.nav a {
+  margin-left: 20px;
+  font-size: 16px;
+  color: #FF8F00;
+}
+
+/* Hero */
+.hero {
+  background: url('banner.jpg') center center/cover no-repeat;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background: #FFA000;
+  color: #000;
+  padding: 12px 30px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Cards */
+.cards .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 60px 0;
+}
+
+.card {
+  background: #2B2B2B;
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid #444;
+}
+
+/* Highlight section */
+.highlight {
+  background: #1c2333;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.highlight p {
+  font-size: 18px;
+}
+
+/* Info Section */
+.info {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.info h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.info p {
+  font-size: 18px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Footer */
+.site-footer {
+  background: #1c1800;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-logos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.footer-logos img {
+  width: 60px;
+  height: auto;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.footer-text {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.footer-subtext {
+  font-size: 12px;
+  color: #aaa;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .cards .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .nav {
+    margin-top: 10px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 600px) {
+  .cards .container {
+    grid-template-columns: 1fr;
+  }
+
+  .site-header .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+  }
+}
