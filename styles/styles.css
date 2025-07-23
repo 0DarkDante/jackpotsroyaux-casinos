@@ -4,6 +4,12 @@
   padding: 0;
 }
 
+:root {
+  --font-family: "Fira Sans", sans-serif;
+  --second-family: "Ibarra Real Nova", serif;
+  --third-family: "Inter", sans-serif;
+}
+
 body {
   font-family: sans-serif;
   line-height: 1.6;
@@ -24,34 +30,49 @@ a {
 
 /* Header */
 .site-header {
-  background: #1c1800;
-  padding: 20px 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background: #0568a2;
+  padding: 16px 0;
+  font-family: "Ibarra Real Nova", sans-serif;
+
 }
 
 .site-header .container {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 20px;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 .logo {
   font-size: 24px;
 }
 
+.logo-header-block {
+  display: flex;
+  align-items: center;
+}
+
 .site-name {
-  font-size: 18px;
-  font-weight: bold;
-  margin-left: 10px;
+  font-weight: 600;
+    font-size: 18px;
+  text-transform: uppercase;
+    color: #fff;
+  margin-left: 16px;
+}
+
+.nav {
+  display: flex;
+  gap: 10px;
 }
 
 .nav a {
-  margin-left: 20px;
-  font-size: 16px;
-  color: #FF8F00;
+  font-weight: 400;
+    font-size: 16px;
+    color: #dadada;
+    font-family: "Fira Sans", sans-serif;
 }
 
 /* Hero */
